@@ -32,7 +32,7 @@ from romWriter import RomWriter
 (
     Missile, Super, PowerBomb, Morph, Springball, Bombs, HiJump,
     GravitySuit, Varia, Wave, SpeedBooster, Spazer, Ice, Grapple,
-    Plasma, Screw, Charge, SpaceJump, Energy, Reserve, Xray
+    Plasma, Screw, Charge, SpaceJump, Energy, Reserve, Burst
 ) = items_unpackable
 
 
