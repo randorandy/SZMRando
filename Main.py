@@ -181,9 +181,9 @@ def write_rom(game: Game, romWriter: Optional[RomWriter] = None) -> str:
     romWriter.writeBytes(0x8b629, b"\x01")
 
     #restore unknown items pickup behavior (no need to unlock them)
-    romWriter.writeBytes(0x26859, b"\x02\xf3\x88\x00\x02\x0c")
-    romWriter.writeBytes(0x267e0, b"\x02\xb0\x88\x08\x00\x12")
-    romWriter.writeBytes(0x26890, b"\x02\xf3\x88\x08")
+    romWriter.writeBytes(0x26856, b"\x02\xf3\x88\x00\x02\x0c") #SJ now correct
+    romWriter.writeBytes(0x267e0, b"\x02\xb0\x88\x08\x00\x12") #Plasma Chozo
+    romWriter.writeBytes(0x26890, b"\x02\xf3\x88\x08") #Screw Chozo
     
     romWriter.finalizeRom(rom1_path)
     print("Done!")
