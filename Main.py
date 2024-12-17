@@ -79,9 +79,6 @@ def generate(options: GameOptions) -> Game:
                 VanillaAreas(),
                 seeeed)
     while not seedComplete :
-        if game.area_rando:  # area rando
-            game.connections = areaRando.RandomizeAreas()
-            # print(Connections) #test
         randomizeAttempts += 1
         if randomizeAttempts > 10:
             print("Giving up after 10 attempts. Help?")
