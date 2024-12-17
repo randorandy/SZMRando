@@ -75,7 +75,7 @@ def generate(options: GameOptions) -> Game:
     randomizeAttempts = 0
     game = Game(Expert,
                 csvdict,
-                areaA == "A",
+                options.visibility,
                 VanillaAreas(),
                 seeeed)
     while not seedComplete :
