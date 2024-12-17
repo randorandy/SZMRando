@@ -59,7 +59,7 @@ def Main(argv: list[str], romWriter: Optional[RomWriter] = None) -> None:
     rom_name = write_rom(game)
     write_spoiler_file(game, rom_name)
 
-def generate() -> Game:
+def generate(options: GameOptions) -> Game:
     logicChoice = "E"
     fillChoice = "D"
     areaA = ""
